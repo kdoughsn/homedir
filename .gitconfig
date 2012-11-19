@@ -1,0 +1,29 @@
+[user]
+	name = Kevin Dougherty
+	email = dougherty@okcupidlabs.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[alias]
+	unadd = reset HEAD
+	changes = diff --name-status -r
+	wup = log -p origin..@{0}
+	graph = log --graph --oneline --all --decorate
+[push]
+	default = tracking
